@@ -1,0 +1,57 @@
+
+
+   body
+      background #3C444A
+
+.container
+   text-align center
+   h1
+     color #fff
+     font-size 1.2em
+     margin.1em 0
+
+.nav-pokemones
+   background #CE2E37
+ul
+    li  
+      display inline-block
+
+   a
+      border-top 5px solid transparent
+         color #FFF
+         display block
+         padding.8em
+         text-decoration none
+         transition .5s
+
+      &:hover
+           border-top 5px solid #D8E3D4
+
+   .container-pokemons
+   border 1px solid :red
+   padding 1.5em
+   width 1000px
+   margin 0 auto
+
+   .pokemons
+         border 1px solid red
+         width 48%
+         overflow hidden
+         vertical-align top
+
+         #pokemon1
+              float left
+           .datos-pokemons
+              border 1px solid red 
+              margin-left 150px
+              margin-top 20px
+              
+              #nombre
+              color
+
+
+
+      
+
+
+
