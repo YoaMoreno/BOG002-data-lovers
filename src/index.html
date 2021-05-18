@@ -6,24 +6,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div container></container>
-      <h1>Pokemon Go</h1>
-      <hr>
-      <div class="row"id="items"></div>
-    </div>
-    <template id="template-card">
-      <div class="col-12 mb-2 col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <h2>name</h2>
-            <p>num</p>
-            <img src id="imagen1" alt="imagen pokemon" width="128" height="128" />>imagen Pokemon</p>
-            <button class="btn-dark">open</button>
-          </div>
-        </div> 
-      </div> 
-    </template>
+  </div>
+  <nav class="nav-pokemons">
+  <ul>
+    <li>
+      <a href="#">Tipo</a>
+    </li>
+    <li>
+      <a href="#">Ordenar</a>
+    </li>
+    <li>
+      <a href="#">Estadísticas</a>
+    </li>
+  </ul>   
+
+</nav>
+
     <div id="root"></div>
     <script src="main.js" type="module"></script>
-  </body>
-</html>
+  <h1>Pokemon</h1>
+  <div id="poke_container" class="poke-container"></div>
+  <script src="main.js"></script>
+  <div id="tarjetas">
+    <div class="cadaUnatarjetas">
+    </div>
+  
+ 
+</body>
+
+</html> 
