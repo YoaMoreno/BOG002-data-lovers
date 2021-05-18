@@ -1,32 +1,33 @@
-// estas funciones son de ejemplo
-
-//export const example = () => {
- // return 'example';
 
 
- export function sortData(dataPokemones, sortOrdenar){
+function sortData(dataPokemones, sortOrdenar){
 
   const ordenarPokemonName = dataPokemones.sort((a,b) => {
-  if(a.name.toLowerCase()<b.name.toLowerCase()) return -1;
-  if(a.name.toLowerCase()>b.name.toLowerCase()) return 1;
-  return 0;
-  
-});
+  if(a.name.toLowerCase()<b.name.toLowerCase()) {
+  return -1;
+  }
 
-const ordenarPokemonNum = dataPokemones.sort((a,b) => {
+  if(a.name.toLowerCase()>b.name.toLowerCase()) {
+  return 1;
+  }
+  return 0;
+  });
+}
+//console.log(dataPokemones)
+/*const ordenarPokemonNum = dataPokemones.sort((a,b) => {
   if(a.num<b.num) return -1;
   if(a.num>b.num) return 1;
   return 0;
-});
+});*/
 
-if (sortOrdenar === "Z-A"){
-  return result.reverse();
+/*if (sortOrdenar === "Z-A"){
+  return ordenarPokemonName.reverse();
 }
   else {
-  return result;
-}
+  return ordenarPokemonName;
+}*/
 
-//console.log(OrdenarPokemonNum);
+//console.log(OrdenarPokemonName);
 
 //funcion (filtrar)
 /*export function filtrarGeneration(dataPokemones,userCondition){
