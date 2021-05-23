@@ -85,7 +85,7 @@ h2 {
 	max-width:1200px;
 }
 
-.tarjetas {
+.p {
 	background-color: #eee;
 	border-radius: 20px;
 	box-shadow: 0 3px 15px rgba(105, 216, 216, 0.5);
@@ -119,6 +119,10 @@ h2 {
 }
 
 .nombre.pokemon{
+	margin: 15px 0 7px;
+	letter-spacing: 1px;
+} 
+.type.pokemon{
 	margin: 15px 0 7px;
 	letter-spacing: 1px;
 } 

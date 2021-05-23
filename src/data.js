@@ -2,36 +2,32 @@
 
 export function sortData(dataPokemones, sortOrdenar){
 
+
   const ordenarPokemonName = dataPokemones.sort((a,b) => {
   if(a.name.toLowerCase()<b.name.toLowerCase()) return -1;
   if(a.name.toLowerCase()>b.name.toLowerCase()) return 1;
   return 0;
 
-  
- 
 });
 
-/*const ordenarPokemonNumero = dataPokemones.sort((a,b) => {
+  const ordenarPokemonNumero = dataPokemones.sort((a,b) => {
   if(a.num<b.num) return -1;
   if(a.num>b.num) return 1;
   return 0;
 });
 
-/*if (sortOrdenar === "Z-A"){
-  return dataPokemones.reverse();
+    if (sortOrdenar === "Z-A"){
+   return ordenarPokemonName.reverse();
 }
   else {
-  return dataPokemones;
-}*/
-
-console.log(OrdenarPokemonNum);
-
-//funcion (filtrar)
-/*export function filtrarTypo(dataPokemones,userCondition){
- const result = data.filtrar(d=> d.status === userCondition);
- return dataPokemones;
+  return ordenarPokemonName;
 }
 
-}*/
-    
+}
+
+//funcion (filtrar)
+export function filtrarType(data, userCondition){
+const result = data.filtrarType(d=> d.status === userCondition);
+ return data;
+}
 
