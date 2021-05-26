@@ -1,39 +1,34 @@
 
 
-function sortData(dataPokemones, sortOrdenar){
+//function sortData(dataPokemones, sortOrdenar){
 
-  const ordenarPokemonName = dataPokemones.sort((a,b) => {
-  if(a.name.toLowerCase()<b.name.toLowerCase()) {
-  return -1;
-  }
-
-  if(a.name.toLowerCase()>b.name.toLowerCase()) {
-  return 1;
-  }
-  return 0;
+ 
+export function sortData(data, sortOrdenar){
+console.log(data);
+  const result = data.sort(function (a1,b2)  {
+    if (a1.name < b2.name){
+      return -1;
+    }
+    if (a1.name > b2.name){
+      return 1;
+    }
+    return 0;
   });
+  
+ 
+
+  if (sortOrdenar === "Z-A"){
+    return result.reverse();
+    } else {
+    return result;
+  }  
 }
-//console.log(dataPokemones)
-/*const ordenarPokemonNum = dataPokemones.sort((a,b) => {
-  if(a.num<b.num) return -1;
-  if(a.num>b.num) return 1;
-  return 0;
-});*/
 
-/*if (sortOrdenar === "Z-A"){
-  return ordenarPokemonName.reverse();
+export  function filterGeneration(dataPokemones, userCondition){
+
+  const result = dataPokemones.filter(d => d.generation.num.indexOf(userCondition)>=0 || d.generation.name.indexOf(userCondition)>=0);
+  return result;
+    
 }
-  else {
-  return ordenarPokemonName;
-}*/
-
-//console.log(OrdenarPokemonName);
-
-//funcion (filtrar)
-/*export function filtrarGeneration(dataPokemones,userCondition){
- const result = data.filtrar(d=> d.status === userCondition);
- return result;
-
-}*/
 
 
