@@ -24,11 +24,18 @@ console.log(data);
   }  
 }
 
-export  function filterGeneration(dataPokemones, userCondition){
+//funcion filtrar
 
-  const result = dataPokemones.filter(d => d.generation.num.indexOf(userCondition)>=0 || d.generation.name.indexOf(userCondition)>=0);
+export function filterRarity(dataPokemones, value){
+
+  const result = dataPokemones.filter(function (objetoPokemon){
+    console.log(objetoPokemon)
+    return objetoPokemon["pokemon-rarity"]===value
+  } )
+  console.log(result);
   return result;
     
 }
+
 
 

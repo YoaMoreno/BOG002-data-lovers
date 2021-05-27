@@ -1,4 +1,4 @@
-import { sortData, filterGeneration} from './data.js';
+import { sortData, filterRarity} from './data.js';
 
 import data from './data/pokemon/pokemon.js';
 
@@ -14,20 +14,20 @@ import data from './data/pokemon/pokemon.js';
     pokemones.className = "pokemon";
     const nombrePokemon = document.createElement ('h3')
     const numeroPokemon = document.createElement ('p');
-    const generacionPokemon = document.createElement('p');
+    const rarityPokemon = document.createElement('p');
     const imagenPokemon= document.createElement('img')
     
 
     nombrePokemon.textContent = data[i].name;
     numeroPokemon.textContent = data[i].num; 
-    generacionPokemon.textContent = data[i].generation.num + " " + data[i].generation.name;
+    rarityPokemon.textContent = data[i]["pokemon-rarity"];//.normal + " " + data[i].pokemon-rarity.legendary + " " + data[i].pokemon-rarity.mythic;
     imagenPokemon.src = data[i].img;
    
     
       
     pokemones.appendChild(nombrePokemon);
     pokemones.appendChild(numeroPokemon);
-    pokemones.appendChild(generacionPokemon);
+    pokemones.appendChild(rarityPokemon);
     pokemones.appendChild(imagenPokemon);
                                     
     
@@ -58,14 +58,18 @@ import data from './data/pokemon/pokemon.js';
 
 
 
- const resultadoFilterGeneration = document.querySelector('.resultadoFilterGeneration');
- resultadoFilterGeneration.addEventListener('change', (event) => {
+ const elementoSelectfilterRarity= document.querySelector('.resultadoFilterRarity');
+ elementoSelectfilterRarity.addEventListener('change', (event) => {
+ const elementoSelectfilterRarity= document.querySelector('.resultadoFilterRarity');
+   const valorSelect= (elementoSelectfilterRarity.value);
+   console.log(valorSelect)
   const x = document.querySelector('section');
   x.innerHTML = ""; 
-  const resultadoFilterGeneration = filterGeneration(dataPokemones, "generation i");
+
+  const resultadoFilterRarity = filterRarity(dataPokemones, valorSelect);
   
-  mostrarOrdenar(resultadoFilterGeneration);
-  console.log("filtro por", resultadoFilterGeneration)
+  mostrarOrdenar(resultadoFilterRarity);
+  console.log("filtro por", resultadoFilterRarity)
 });
 
 

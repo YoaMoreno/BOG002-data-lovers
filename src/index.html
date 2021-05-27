@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="style.css" />
+
+    <meta charset="utf-8">
+
   </head>
   <body>
     <header>
@@ -13,7 +17,7 @@
           </figure>
         </div>	
 			  <nav>
-          <label> ordenar
+          <label> Nombre
 				    <select class="mostrarOrdenarPokemones"  name= "mostrarOrdenarPokemones"> 
               <option value="ordenar">ordenar por</option>            
               <option value="A-Z">A-Z</option>
@@ -22,11 +26,12 @@
           </label>
           <div class="resultadoMostrarOrdenar"></div>
           
-          <label> Filtrar
-          <select class="resultadoFilterGeneration" name="resultadoFilterGeneration">
-            <option value="filtrarGeneration">por Generación</option>
-            <option value="num">num</option>
-            <option value="name">name</option>
+          <label> Rarity
+          <select class="resultadoFilterRarity" name="resultadoFilterRarity">
+            <option value="filtrarRarity">Filtrar por:</option>
+            <option value="normal">Normal</option>
+            <option value="legendary">Legendary</option>
+            <option value="mythic">Mythic</option>
       
           </select>
           </label>
