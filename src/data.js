@@ -38,4 +38,10 @@ export function filterRarity(dataPokemones, value){
 }
 
 
-
+/*function promedio(dataPokemones,) {
+  const result ={
+    "normal": 0,
+    "legendary": 0,
+    "mythic": 0,*/
+    
+  

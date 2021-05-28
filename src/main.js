@@ -74,6 +74,21 @@ import data from './data/pokemon/pokemon.js';
 
 
 
+// function promedio
+/*
+function promedio(dataPokemones,) {
+  const result ={
+    "normal": 0,
+    "legendary": 0,
+    "mythic": 0,
+    for (let i = 0; i< data.length; i+ ){
+  }/*
+  // para cada pokemon si es normal result.normal = result.normal + 1
+  //dividir cada propiedad de result por la longitud del array pokemon
+  return   
+}*/
+    
+  
 
   
 
