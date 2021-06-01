@@ -5,13 +5,13 @@
   width:100%; 
   overflow: hidden; 
   margin-bottom:50px;
-  background-color: rgb(14, 72, 233);
+  background-color: rgb(115, 223, 212);
   position: central;
 }
 
 
   body{
-   background-color: rgb(14, 72, 233);
+   background-color: rgb(115, 223, 212);
    background-size: cover;
    position: relative;
    width: 1440px;
@@ -20,7 +20,7 @@
 
 
 label {
-  color: rgb(241, 239, 83);
+  color: rgb(14, 13, 9);
 }
 .resultadoMostrarOrdenar{
   color:transparent;
@@ -34,7 +34,7 @@ label {
     width: 18%;
     height: 20%;
     top: 3%;
-    background: rgb(243, 200, 8);
+    background: rgb(248, 248, 245);
     box-sizing: border-box;
     box-shadow: 6px 6px 6px rgba(2, 15, 66, 0.383);
     border-radius: 50px;
@@ -63,8 +63,8 @@ label {
   font-family: Shadows Into Light;
   font-size: 3.5rem;
   
-  margin-bottom: 10px;
-  color: rgb(40, 39, 46);
+  margin-bottom: 20px;
+  color: rgb(205, 223, 43);
   text-align: center;
 }
 .name {
@@ -79,54 +79,76 @@ label {
   color: rgb(5, 2, 26);
   font-size: 1.5rem;
  }
-section img {
+ section img {
   display: flex;
   width: 50%;
   margin: 5px 0;
   border-radius: 1000px;
+  justify-content: center;
   image-orientation: center;
  }
-
+ .pokemonImg {
+   justify-content: center;
+ }
  
 small {
   opacity: .5;
   font-weight: 300;
- }/*
+ }
+ nav {
+  display: inline-flex;
+  margin-left: 10%;
+  width: 80%;
+  max-width: 35em;
+  justify-content: center;
+  padding: 1em;
+  border-radius: 10px;
+  font-family: Shadows Into Light;
+  font-size: 2.0rem;
+
+ }
+ .imgPokemon {
+  width: 50%;
+  justify-content: center;
+  align-content: center;
+  margin-left: 22%;
+  height:
+ }
  
-  @media screen and (max-width: 950px) {
+  /*@media screen and (max-width: 950px) {
 	header .logo,
 	header nav {
 		width:100%;
-/*Centramos el menu y el logotipo*/
-		text-align:center; 
+Centramos el menu y el logotipo
+		text-align: center; 
 		line-height:100px;
 	}
-  }
+  
   
 
-  @media screen and (max-width 3000px){
-  header.logo,
+  @media screen and (max-width:3000px){
+  header.logo, 
 	header nav {
         color: silver;
         font-size: 1rem;
     }
 }
 
-@media screen and (max-width 1200px){
+@media screen and (max-width: 1200px){
   header.logo,
 	header nav {
         color: rgb(38, 143, 56);
         font-size: 1rem;
     }
 }
-@media screen and (max-width 700px){
+@media screen and (max-width: 700px){
   header.logo,
 	header nav {
         color: rgb(116, 64, 90);
         font-size: 1rem;
     }
 }
-@media screen and (max-width 5px){
+@media screen and (max-width: 5px){
   header.logo,
 	header nav {
     color: rgb(224, 107, 28);
@@ -134,4 +156,5 @@ small {
     }
 }
 
- 
+  }*/
+  

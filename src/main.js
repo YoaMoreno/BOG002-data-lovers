@@ -16,11 +16,11 @@ import data from './data/pokemon/pokemon.js';
     const numeroPokemon = document.createElement ('p');
     const rarityPokemon = document.createElement('p');
     const imagenPokemon= document.createElement('img')
-    
+    imagenPokemon.classList.add ('imgPokemon');
 
     nombrePokemon.textContent = data[i].name;
     numeroPokemon.textContent = data[i].num; 
-    rarityPokemon.textContent = data[i]["pokemon-rarity"];//.normal + " " + data[i].pokemon-rarity.legendary + " " + data[i].pokemon-rarity.mythic;
+    rarityPokemon.textContent = data[i]["pokemon-rarity"];
     imagenPokemon.src = data[i].img;
    
     
@@ -59,18 +59,19 @@ import data from './data/pokemon/pokemon.js';
 
 
  const elementoSelectfilterRarity= document.querySelector('.resultadoFilterRarity');
- elementoSelectfilterRarity.addEventListener('change', (event) => {
+ elementoSelectfilterRarity.addEventListener('change', filtro)
+  function filtro () { 
  const elementoSelectfilterRarity= document.querySelector('.resultadoFilterRarity');
    const valorSelect= (elementoSelectfilterRarity.value);
-   console.log(valorSelect)
+   //console.log(valorSelect)
   const x = document.querySelector('section');
   x.innerHTML = ""; 
 
   const resultadoFilterRarity = filterRarity(dataPokemones, valorSelect);
   
   mostrarOrdenar(resultadoFilterRarity);
-  console.log("filtro por", resultadoFilterRarity)
-});
+  //console.log("filtro por", resultadoFilterRarity)
+}
 
 
 
