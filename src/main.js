@@ -1,4 +1,4 @@
-import { sortData, filterRarity} from './data.js';
+import { sortData, filterRarity, porcentaje } from './data.js';
 
 import data from './data/pokemon/pokemon.js';
 
@@ -12,7 +12,7 @@ import data from './data/pokemon/pokemon.js';
      
     const pokemones = document.createElement('article');
     pokemones.className = "pokemon";
-    const nombrePokemon = document.createElement ('h3')
+    const nombrePokemon = document.createElement ('h1')
     const numeroPokemon = document.createElement ('p');
     const rarityPokemon = document.createElement('p');
     const imagenPokemon= document.createElement('img')
@@ -39,6 +39,7 @@ import data from './data/pokemon/pokemon.js';
 
   
 }
+    porcentaje(dataPokemones);
     mostrarOrdenar(dataPokemones);
     //console.log(data);
 
@@ -48,12 +49,14 @@ import data from './data/pokemon/pokemon.js';
     mostrarOrdenarPokemones.addEventListener('change', (event) => {
      const x = document.querySelector('section');
       x.innerHTML = ""; 
-     const resultadoMostrarOrdenar = document.querySelector('.resultadoMostrarOrdenar');
-      resultadoMostrarOrdenar.textContent = `Ordenar por ${event.target.value}`;
+     //const resultadoMostrarOrdenar = document.querySelector('.resultadoMostrarOrdenar');
+      //resultadoMostrarOrdenar.textContent = `Ordenar por ${event.target.value}`;
       //console.log(event.target.value)
        const result = sortData(dataPokemones, event.target.value);
       mostrarOrdenar(result);
-      // console.log(result);
+      // console.log(result);´
+
+      mostrarOrdenar(dataPokemones); 
   });
 
 
@@ -75,20 +78,8 @@ import data from './data/pokemon/pokemon.js';
 
 
 
-// function promedio
-/*
-function promedio(dataPokemones,) {
-  const result ={
-    "normal": 0,
-    "legendary": 0,
-    "mythic": 0,
-    for (let i = 0; i< data.length; i+ ){
-  }/*
-  // para cada pokemon si es normal result.normal = result.normal + 1
-  //dividir cada propiedad de result por la longitud del array pokemon
-  return   
-}*/
-    
+
+
   
 
   
