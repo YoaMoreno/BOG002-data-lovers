@@ -71,7 +71,7 @@ describe("filterRarity debería ser una función", () => {
 });
 
 describe("porcentaje", () => {
-  it("calcula correcatmente", () => {
+  it("calcula correctamente", () => {
     const result = porcentaje(data.pokemon);
     expect(result.normal).toBe(95.61752988047809);
     expect(result.legendary).toBe(3.5856573705179287);

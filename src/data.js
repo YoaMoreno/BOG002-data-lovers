@@ -35,16 +35,7 @@ export function filterRarity(dataPokemones, value) {
 //funcion estadistica
 
 export function porcentaje(dataPokemones) {
-  //   data[i].normal;
-  //   data[i].Legendary; 
-  //   data[i].Mythic;
-
-
-  // for (let i = 0; i< data.length; i++ ){
-
-  //     }
-
-  const result = {
+    const result = {
     normal: 0,
     legendary: 0,
     mythic: 0,
@@ -67,7 +58,7 @@ export function porcentaje(dataPokemones) {
   result.normal = result.normal / dataPokemones.length * 100
   result.legendary = result.legendary / dataPokemones.length * 100
   result.mythic = result.mythic / dataPokemones.length * 100
-
+  console.log(result)
   return result;
 
 

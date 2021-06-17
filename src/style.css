@@ -129,7 +129,7 @@ small {
 
 
  nav {
-  background-color: rgb(255, 201, 38);
+  background-color: rgb(165, 232, 194);
   display: inline-flex; 
   margin: 6px;
   width: 1300px;
@@ -205,25 +205,49 @@ width: 100%;
   overflow: scroll;
   
  }
- @media screen and (max-width: 800px) {
-  .container1 {
-    background: rgb(52, 230, 185);
-  }
-}
 
-@media screen and (min-width: 640px) and (max-width: 1280px) {
+ @media screen and (min-width: 440px)  and (max-width: 600px) {
   .container1 {
-    background: #6B71E8
+    background: rgb(255, 120, 20);
   }
   .pokemon{
-    width: 40%;
-    height: 40%;
-    top: 4%;
+    width: 30%;
+    height: 30%;
+    top: 3%;
 }
+  .nav{
+    background-color: rgb(255, 120, 20);
+    width: 500%;
+    height: 50%;
+    top: 3%;
+}
+}
+ 
+
+/*@media screen and (min-width: 601px)  and (max-width: 1085px) {
+  .container1 {
+    background: #12DEC8
+  }
+  .pokemon{
+    width: 25%;
+    height: 25%;
+    top: 2%;
+}
+  .nav{
+  background-color: rgb(18, 222, 200);
+  }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1086px)  and (max-width: 3000px) { 
   .container1 {
-    background: #FFC113;
+    background: #285DE3;
   }
+  .pokemon{
+    width: 20%;
+    height: 20%;
+    top: 3%;
+}
+  .nav{
+  background-color: rgb(40, 93, 227);
 } 
+}*/
